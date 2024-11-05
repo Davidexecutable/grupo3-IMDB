@@ -7,24 +7,15 @@
     text-decoration: underline !important; 
 }
 
-#formPersonal {
+#seccion {
     border: 1px solid #cccccc;
     border-radius: 8px; 
     padding: 20px;
     font-weight: bold;
 }
 
-#formPersonal h2{
+#seccion h2{
     padding-bottom: 5px;
-}
-
-#formPersonal button{
-    background-color: #FFD700;
-    color: black;
-}
-
-#formPersonal button:hover{
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 input[type="text"], input[type="date"], select, textarea {
@@ -41,16 +32,24 @@ textarea:focus {
     box-shadow: 0 0 8px rgba(135, 206, 235, 0.5);
     border-color: #87CEEB; 
 }
-#Seccion{
+#seccion{
         border: 1px solid #cccccc;
         border-radius: 8px; 
         padding: 20px;
         font-weight: bold;
         margin-left: 8px;
 }
-#botonEnviar{
+
+#botonEnviar button{
     align-self: center;
+    background-color: #FFD700;
+    color: black
 }
+
+#botonEnviar button:hover{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 #formulario{
     display: flex;
 }
