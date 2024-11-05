@@ -18,43 +18,7 @@
                     alt="IMDBlogo" class="img-fluid">
             </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-10" id="listaErrores">
-            <ul>
-                <li id="linombre"></li>
-                <li id="liapellidos"></li>
-                <li id="lifecha"></li>
-                <li id="ligenero"></li>
-                <li id="linacionalidad"></li>
-                <li id="litipoindentificacion"></li>
-                <li id="linumeroindentificacion"></li>
-                <li id="liestadocivil"></li>
-                <li id="limovil"></li>
-                <li id="lifijo"></li>
-                <li id="lilinkedIn"></li>
-                <li id="litwitter"></li>
-                <li id="liweb"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-                <li id="linombre"></li>
-            </ul>
-        </div>
+
         <div class="col-12 bg-white py-3" id="formContenedor">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-6 col-sm-3 text-black py-3" id="primeraFila">
@@ -77,7 +41,7 @@
                             <div class="mb-3">
                                 <label for="genero" class="form-label">Género</label>
                                 <select id="genero" name="Genero" class="form-select">
-                                    <option value="Género" selected>Género</option>
+                                    <option value="123456789" selected>Género</option>
                                     <option value="Hombre">Hombre</option>
                                     <option value="Mujer">Mujer</option>
                                 </select>
@@ -89,7 +53,7 @@
                             <div class="mb-3">
                                 <label for="tipoIdentificacion" class="form-label">Tipo de Identificación</label>
                                 <select id="tipoIdentificacion" name="tipo de identificacion" class="form-select">
-                                    <option value="Seleccionar" selected>Seleccionar tipo de identificación</option>
+                                    <option value="987654321" selected>Seleccionar tipo de identificación</option>
                                     <option value="NIE">NIE</option>
                                     <option value="NIF">NIF</option>
                                     <option value="Pasaporte">Pasaporte</option>
@@ -109,17 +73,15 @@
                             <h2>Datos de contacto</h2>
                             <div class="mb-3">
                                 <label>Tel&eacute;fono m&oacute;vil</label>
-                                <input type="number" id="movil" title="Telefono movil" class="form-control">
                                 <input type="text" id="telefonoMovil" title="Telefono movil" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label>Tel&eacute;fono fijo</label>
-                                <input type="number" id="fijo" title="Telefono fijo" class="form-control">
                                 <input type="text" id="telefonoFijo" title="Telefono fijo" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label>Correo electronico</label>
-                                <input type="email" id="correo" title="Correo Electronico"
+                                <input type="email" id="correoElectronico" title="Correo Electronico"
                                     class="form-control">
                             </div>
                             <div class="mb-3">
@@ -151,7 +113,8 @@
                             </div>
                             <div class="mb-3">
                                 <label>Numero</label>
-                                <input type="text" id="numeroDireccion" title="Numero de direccion" class="form-control">
+                                <input type="text" id="numeroDireccion" title="Numero de direccion"
+                                    class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label>Piso</label>
@@ -175,17 +138,176 @@
                             </div>
                             <div class="mb-3">
                                 <label>Provincia</label>
-                                
+                                <select name="provincias" id="provincias">
+                                    <optgroup label="Andalucía">
+                                        <option>Almería</option>
+                                        <option>Cádiz</option>
+                                        <option>Córdoba</option>
+                                        <option>Granada</option>
+                                        <option>Huelva</option>
+                                        <option>Jaén</option>
+                                        <option>Málaga</option>
+                                        <option>Sevilla</option>
+                                    </optgroup>
+                                    <optgroup label="Aragón">
+                                        <option>Huesca</option>
+                                        <option>Teruel</option>
+                                        <option>Zaragoza</option>
+                                    </optgroup>
+                                    <optgroup label="Asturias">
+                                        <option>Asturias</option>
+                                    </optgroup>
+                                    <optgroup label="Baleares">
+                                        <option>Islas Baleares</option>
+                                    </optgroup>
+                                    <optgroup label="Canarias">
+                                        <option>Las Palmas</option>
+                                        <option>Santa Cruz de Tenerife</option>
+                                    </optgroup>
+                                    <optgroup label="Cantabria">
+                                        <option>Cantabria</option>
+                                    </optgroup>
+                                    <optgroup label="Castilla-La Mancha">
+                                        <option>Albacete</option>
+                                        <option>Ciudad Real</option>
+                                        <option>Cuenca</option>
+                                        <option>Guadalajara</option>
+                                        <option>Toledo</option>
+                                    </optgroup>
+                                    <optgroup label="Castilla y León">
+                                        <option>Ávila</option>
+                                        <option>Burgos</option>
+                                        <option>León</option>
+                                        <option>Palencia</option>
+                                        <option>Salamanca</option>
+                                        <option>Segovia</option>
+                                        <option>Soria</option>
+                                        <option>Valladolid</option>
+                                        <option>Zamora</option>
+                                    </optgroup>
+                                    <optgroup label="Cataluña">
+                                        <option>Barcelona</option>
+                                        <option>Girona</option>
+                                        <option>Lleida</option>
+                                        <option>Tarragona</option>
+                                    </optgroup>
+                                    <optgroup label="Ceuta">
+                                        <option>Ceuta</option>
+                                    </optgroup>
+                                    <optgroup label="Comunidad de Madrid">
+                                        <option>Madrid</option>
+                                    </optgroup>
+                                    <optgroup label="Comunidad Valenciana">
+                                        <option>Alicante</option>
+                                        <option>Castellón</option>
+                                        <option>Valencia</option>
+                                    </optgroup>
+                                    <optgroup label="Extremadura">
+                                        <option>Badajoz</option>
+                                        <option>Cáceres</option>
+                                    </optgroup>
+                                    <optgroup label="Galicia">
+                                        <option>A Coruña</option>
+                                        <option>Lugo</option>
+                                        <option>Ourense</option>
+                                        <option>Pontevedra</option>
+                                    </optgroup>
+                                    <optgroup label="La Rioja">
+                                        <option>La Rioja</option>
+                                    </optgroup>
+                                    <optgroup label="Melilla">
+                                        <option>Melilla</option>
+                                    </optgroup>
+                                    <optgroup label="Murcia">
+                                        <option>Murcia</option>
+                                    </optgroup>
+                                    <optgroup label="Navarra">
+                                        <option>Navarra</option>
+                                    </optgroup>
+                                    <optgroup label="País Vasco">
+                                        <option>Álava</option>
+                                        <option>Bizkaia</option>
+                                        <option>Gipuzkoa</option>
+                                    </optgroup>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12" id="botonEnviar">
-                            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                
+                <div class="col-sm-12 col-md-6 col-lg-4 text-black py-3" id="segundaFila">
+                    <div id="seccion">
+                        <h2>Métodos de pago</h2>
+
+                        <div class="mb-3">
+                            <label>Tipo de pago</label>
+                            <select name="Tipo de pago" id="tipoPago" class="form-control">
+                                <option>Transferencia</option>
+                            </select>
                         </div>
-                    </form>
+
+                        <div class="mb-3">
+                            <label>Nombre del titular</label>
+                            <input type="text" id="nombreTitular" title="Nombre de titular" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Fecha de caducidad</label>
+                            <input type="text" id="fechaCaducidad" title="fecha de caducidad" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Código de seguridad</label>
+                            <input type="text" id="cvv" title="cvv" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-sm-12 col-md-6 col-lg-4 text-black py-3" id="segundaFila">
+                    <div id="seccion">
+                        <h2>Datos bancarios</h2>
+
+                        <div class="mb-3">
+                            <label>Nombre del banco</label>
+                            <input type="text" id="nombreBanco" title="Nombre del banco" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Número de cuenta</label>
+                            <input type="text" id="numeroCuenta" title="Numero de cuenta" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Swift/BIC</label>
+                            <input type="text" id="swift" title="swift/bic" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Tipo de cuenta</label>
+                            <select name="Tipo de cuenta" id="tipoCuenta" class="form-control">
+                                <option>Corriente</option>
+                                <option>Ahorro</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Sucursal</label>
+                            <input type="text" id="sucursal" title="Sucursal" class="form-control">
+                        </div>
+                    </div>
+
+                    
+                    <div id="botonEnviar">
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>
-        <!--Footer-->
+        
         <div class="col-12 bg-light pt-3" id="footer">
             <div class="row text-center justify-content-center">
                 <div class="col-12 col-md-6 col-lg-3 text-white py-3 text-center">
