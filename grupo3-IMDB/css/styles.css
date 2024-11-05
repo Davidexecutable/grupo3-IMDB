@@ -54,3 +54,6 @@ textarea:focus {
 #formulario{
     display: flex;
 }
+li{
+    display: none;
+}
