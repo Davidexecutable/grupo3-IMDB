@@ -137,6 +137,19 @@ function validar() {
     }
 
 }
+
+function toggleSelection(card, filaId) {
+    if (filaId === 'filaSeleccionUnica') {
+        const cards = document.querySelectorAll(`#${filaId} .card`);
+        cards.forEach(function (cardInRow) {
+            
+        });
+    } 
+    else if (filaId === 'filaSeleccionMultiple') {
+        
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     function main() {
         // Intenta obtener el elemento 'listaErrores' y ocúltalo si existe

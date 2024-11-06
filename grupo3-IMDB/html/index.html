@@ -344,74 +344,74 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                
-                <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+            <div class="row justify-content-center text-center gx-2" id="filaSeleccionUnica">
+                <h4><strong>Elige un plan</strong></h4>
+                <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
                     <div>
-                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta" onclick="toggleSelection(this, 'filaSeleccionUnica')">
                             <div class="card-body">
-                                <h5 class="card-title">Plan básico</h5>
-                                <p class="card-text">Contenido del plan básico.</p>
+                                <h5 class="card-title">Plan b</h5>
+                                <p class="card-text">Contenido.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 
-                <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+                <div class="col-sm-4 col-lg-4 text-black py-3" id="terceraFila">
                     <div>
-                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta" onclick="toggleSelection(this, 'filaSeleccionUnica')">
                             <div class="card-body">
                                 <h5 class="card-title">Plan pro</h5>
-                                <p class="card-text">Contenido del plan pro.</p>
+                                <p class="card-text">Contenido.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+                <div class="col-sm-4 col-lg-4 text-black py-3" id="terceraFila">
                     <div>
-                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta" onclick="toggleSelection(this, 'filaSeleccionUnica')">
                             <div class="card-body">
                                 <h5 class="card-title">Plan premium</h5>
-                                <p class="card-text">Contenido del plan premium.</p>
+                                <p class="card-text">Contenido.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                
-                <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+            <div class="row justify-content-center text-center gx-2" id="filaSeleccionMultiple">
+                <h4><strong>¡Puede elegir también estos complementos!</strong></h4>
+                <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="cuartaFila">
                     <div>
-                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta" onclick="toggleSelection(this, 'filaSeleccionMultiple')">
                             <div class="card-body">
                                 <h5 class="card-title">Seguro antirrobo</h5>
-                                <p class="card-text">Contenido del seguro antirrobo.</p>
+                                <p class="card-text">Contenido.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 
-                <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+                <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="cuartaFila">
                     <div>
-                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                        <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta" onclick="toggleSelection(this, 'filaSeleccionMultiple')">
                             <div class="card-body">
                                 <h5 class="card-title">Instalación en casa</h5>
-                                <p class="card-text">Contenido de la instalación en casa</p>
+                                <p class="card-text">Contenido</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+                <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="cuartaFila">
                     <div>
-                        <div class="card selectable-card" tabindex="0" data-selected="false" id="tarjeta">
+                        <div class="card selectable-card" tabindex="0" data-selected="false" id="tarjeta" onclick="toggleSelection(this, 'filaSeleccionMultiple')">
                             <div class="card-body">
                                 <h5 class="card-title">Entrega a pie de calle</h5>
-                                <p class="card-text">Contenido de la entrega a pie de calle.</p>
+                                <p class="card-text">Contenido.</p>
                             </div>
                         </div>
                     </div>
@@ -421,7 +421,7 @@
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-4 text-black py-3" id="ultimaFila">
                     <div id="botonEnviar">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-primary" id="boton">Enviar</button>
                     </div>
                 </div>
             </div>
