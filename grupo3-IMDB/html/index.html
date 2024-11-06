@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
     <title>IMDB</title>
+    <script src="/js/main.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-10" id="listaErrores">
             <ul>
-                <li id="linombre" class="lierror"></li>
+                <li id="linombre" class="lierror">El campo Nombre es obligatorio</li>
                 <li id="liapellidos" class="lierror"></li>
                 <li id="lifecha" class="lierror"></li>
                 <li id="ligenero" class="lierror"></li>
@@ -55,12 +56,6 @@
                 <li id="linombre"class="lierror"></li>
             </ul>
         </div>
-        <div class="col-12 bg-white py-3" id="formContenedor">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-6 col-sm-3 text-black py-3" id="primeraFila">
-                    <form id="formulario">
-                        <div id="seccion" class="col-lg-4 col-md-6 col-sm-12">
-
         <div id="formContenedor">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-6 col-lg-4 text-black py-3" id="primeraFila">
@@ -351,8 +346,7 @@
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-4 text-black py-3" id="ultimaFila">
                     <div id="botonEnviar">
-                        <button type="submit" class="btn btn-primary w-100" id="boton">Enviar</button>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-primary" id="boton">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -384,6 +378,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<script src="../js/main.js"></script>
 
 </html>
