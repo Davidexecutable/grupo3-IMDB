@@ -55,6 +55,25 @@ textarea:focus {
 #formulario{
     display: flex;
 }
+
 li{
     display: none;
+}
+
+#tarjeta{
+    border: 1px solid #cccccc;
+    border-radius: 0 !important;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+    padding-right: 8px;
+}
+
+#tarjeta h5{
+    font-weight: bold;
+}
+
+#tarjeta:focus{
+    border: 2px solid orange; /* Aplica un borde naranja al enfocarse */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.6); /* Agrega una sombra naranja para mayor énfasis */
 }
