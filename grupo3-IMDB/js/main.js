@@ -1,11 +1,22 @@
 function validar() {
     console.log("validar")
+    const elementos = document.querySelectorAll('.lierror');
+        if (elementos.length > 0) {
+            elementos.forEach((elemento) => {
+                elemento.style.display = 'none';
+            });
+            console.log(`Ocultados ${elementos.length} elementos con clase 'lierror'`);
+        } else {
+            console.warn("No se encontraron elementos con la clase 'lierror'");
+        }
+
+    window.scrollTo({ top: 0, behavior: 'instant' })
     const nombre = document.getElementById('nombre');
     if (nombre.value === "") {
         const listItem = document.getElementById('linombre');
         listItem.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
         console.log("error y listamostrados")
     }
     // Para "apellidos"
@@ -14,7 +25,7 @@ function validar() {
         const listItem1 = document.getElementById('liapellidos');
         listItem1.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "fecha"
@@ -23,7 +34,7 @@ function validar() {
         const listItem2 = document.getElementById('lifecha');
         listItem2.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "genero"
@@ -32,7 +43,7 @@ function validar() {
         const listItem3 = document.getElementById('ligenero');
         listItem3.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "nacionalidad"
@@ -41,7 +52,7 @@ function validar() {
         const listItem4 = document.getElementById('linacionalidad');
         listItem4.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "tipoidentificacion"
@@ -50,7 +61,7 @@ function validar() {
         const listItem5 = document.getElementById('litipoidentificacion');
         listItem5.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "numeroidentificacion"
@@ -60,7 +71,7 @@ function validar() {
             const listItem6 = document.getElementById('linumeroidentificacion');
             listItem6.style.display = 'block';
             const uld = document.getElementById('listaErrores');
-            uld.style.display = 'block';
+            uld.style.display = 'flex';
         }
     }
     if (tipoidentificacion.value == "NIF") {
@@ -68,7 +79,7 @@ function validar() {
             const listItem7 = document.getElementById('linumeroidentificacion');
             listItem7.style.display = 'block';
             const uld = document.getElementById('listaErrores');
-            uld.style.display = 'block';
+            uld.style.display = 'flex';
         }
 
     }
@@ -79,7 +90,7 @@ function validar() {
         const listItem8 = document.getElementById('liestadocivil');
         listItem8.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "movil"
@@ -88,7 +99,7 @@ function validar() {
         const listItem9 = document.getElementById('limovil');
         listItem9.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "fijo"
@@ -97,7 +108,7 @@ function validar() {
         const listItem10 = document.getElementById('lifijo');
         listItem10.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "correo"
@@ -106,7 +117,7 @@ function validar() {
         const listItem11 = document.getElementById('licorreo');
         listItem11.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "linkedIn"
@@ -115,7 +126,7 @@ function validar() {
         const listItem12 = document.getElementById('lilinkedIn');
         listItem12.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "twitter"
@@ -124,7 +135,7 @@ function validar() {
         const listItem13 = document.getElementById('litwitter');
         listItem13.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
     // Para "web"
@@ -133,7 +144,7 @@ function validar() {
         const listItem14 = document.getElementById('liweb');
         listItem14.style.display = 'block';
         const uld = document.getElementById('listaErrores');
-        uld.style.display = 'block';
+        uld.style.display = 'flex';
     }
 
 }

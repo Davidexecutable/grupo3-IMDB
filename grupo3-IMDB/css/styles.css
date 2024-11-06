@@ -56,10 +56,6 @@ textarea:focus {
     display: flex;
 }
 
-li{
-    display: none;
-}
-
 #tarjeta{
     border: 1px solid #cccccc;
     border-radius: 0 !important;
@@ -76,4 +72,8 @@ li{
 #tarjeta:focus{
     border: 2px solid orange; /* Aplica un borde naranja al enfocarse */
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.6); /* Agrega una sombra naranja para mayor énfasis */
+}
+#listaErrores{
+    border: red;
+
 }
