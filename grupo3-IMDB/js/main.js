@@ -1,4 +1,9 @@
 function validar() {
+    document.getElementById(listaErrores).style.display='none';
+    const elementos = document.querySelectorAll('.lierror'); // selecciona elementos con clase "mi-clase"
+    elementos.forEach((elemento) => {
+  elemento.style.display = 'none';
+});
     const nombre = document.getElementById('nombre');
     if (nombre.value === "") {
         const listItem = document.getElementById('linombre');
@@ -136,5 +141,6 @@ function validar() {
 
 }
 function main() {
-    
+    const boton = document.getElementById('boton');
+    boton.addEventListener('click', validar);
 }
