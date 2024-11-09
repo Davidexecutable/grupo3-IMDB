@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
     <title>IMDB</title>
-    <script src="/js/main.js"></script>
 </head>
 
 <body>
@@ -20,41 +19,23 @@
             </a>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-10" id="listaErrores">
-                <ul>
-                    <li id="linombre" class="lierror">El campo Nombre es obligatorio</li>
-                    <li id="liapellidos" class="lierror">El campo Apellidos es obligatorio</li>
-                    <li id="lifecha" class="lierror">Introduce una fecha valida</li>
-                    <li id="ligenero" class="lierror">El campo Género es obligatorio</li>
-                    <li id="linacionalidad" class="lierror">El campo Nacionalidad es obligatorio</li>
-                    <li id="litipoindentificacion" class="lierror">Selecciona tu tipo de indentificacion</li>
-                    <li id="linumeroindentificacion" class="lierror">El número de identificacion no es valido</li>
-                    <li id="liestadocivil" class="lierror">El campo Estado civil es obligatorio</li>
-                    <li id="limovil" class="lierror">Introduce un número de teléfono móvil valido</li>
-                    <li id="lifijo" class="lierror">Introduce un número de teléfono fijo valido</li>
-                    <li id="lilinkedIn" class="lierror"></li>
-                    <li id="litwitter" class="lierror"></li>
-                    <li id="liweb" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
-                    <li id="linombre" class="lierror"></li>
+            <div class="col-auto" id="listaErrores">
+                <h3 class="mb-3" id="tituloErrores">Hubo un problema</h3>
+                <ul class="list-group">
+                    <li id="linombre" class="list-group-item">El campo Nombre es obligatorio</li>
+                    <li id="liapellidos" class="list-group-item">El campo Apellidos es obligatorio</li>
+                    <li id="lifecha" class="list-group-item">Introduce una fecha valida</li>
+                    <li id="ligenero" class="list-group-item">El campo Género es obligatorio</li>
+                    <li id="linacionalidad" class="list-group-item">El campo Nacionalidad es obligatorio</li>
+                    <li id="litipoidentificacion" class="list-group-item">Selecciona tu tipo de indentificacion</li>
+                    <li id="linumeroindentificacion" class="list-group-item">El número de identificacion no es valido</li>
+                    <li id="liestadocivil" class="list-group-item">El campo Estado civil es obligatorio</li>
+                    <li id="limovil" class="list-group-item">Introduce un número de teléfono móvil valido</li>
+                    <li id="lifijo" class="list-group-item">Introduce un número de teléfono fijo valido</li>
+                    <li id="licorreo" class="list-group-item">Introduce un correo valido</li>
+                    <li id="lilinkedIn" class="list-group-item"></li>
+                    <li id="litwitter" class="list-group-item"></li>
+                    <li id="liweb" class="list-group-item"></li>
                 </ul>
             </div>
         </div>
@@ -114,19 +95,19 @@
                         <h2>Datos de contacto</h2>
                         <div class="mb-3">
                             <label>Tel&eacute;fono m&oacute;vil</label>
-                            <input type="text" id="movil" title="Telefono movil" class="form-control">
+                            <input type="text" id="telefonoMovil" title="Telefono movil" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label>Tel&eacute;fono fijo</label>
-                            <input type="text" id="fijo" title="Telefono fijo" class="form-control">
+                            <input type="text" id="telefonoFijo" title="Telefono fijo" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label>Correo electronico</label>
-                            <input type="email" id="correo" title="Correo Electronico" class="form-control">
+                            <input type="email" id="correoElectronico" title="Correo Electronico" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label>Perfil de Linkedin</label>
-                            <input type="text" id="perfilLinkedin" title="Perfil Linkedin" class="form-control">
+                            <input type="text" id="perfilLinkedIn" title="Perfil Linkedin" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label>Perfil de Twitter</label>
@@ -343,74 +324,80 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
-
-            <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+        <div class="row justify-content-center text-center gx-2" id="filaSeleccionUnica">
+            <h4><strong>Elige un plan</strong></h4>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
                 <div>
-                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta"
+                        onclick="toggleSelection(this, 'filaSeleccionUnica')">
                         <div class="card-body">
-                            <h5 class="card-title">Plan básico</h5>
-                            <p class="card-text">Contenido del plan básico.</p>
+                            <h5 class="card-title">Plan b</h5>
+                            <p class="card-text">Contenido.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+            <div class="col-sm-4 col-lg-4 text-black py-3" id="terceraFila">
                 <div>
-                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta"
+                        onclick="toggleSelection(this, 'filaSeleccionUnica')">
                         <div class="card-body">
                             <h5 class="card-title">Plan pro</h5>
-                            <p class="card-text">Contenido del plan pro.</p>
+                            <p class="card-text">Contenido.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+            <div class="col-sm-4 col-lg-4 text-black py-3" id="terceraFila">
                 <div>
-                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta"
+                        onclick="toggleSelection(this, 'filaSeleccionUnica')">
                         <div class="card-body">
                             <h5 class="card-title">Plan premium</h5>
-                            <p class="card-text">Contenido del plan premium.</p>
+                            <p class="card-text">Contenido.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-center">
-
-            <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+        <div class="row justify-content-center text-center gx-2" id="filaSeleccionMultiple">
+            <h4><strong>¡Puede elegir también estos complementos!</strong></h4>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="cuartaFila">
                 <div>
-                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta"
+                        onclick="toggleSelection(this, 'filaSeleccionMultiple')">
                         <div class="card-body">
                             <h5 class="card-title">Seguro antirrobo</h5>
-                            <p class="card-text">Contenido del seguro antirrobo.</p>
+                            <p class="card-text">Contenido.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+            <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="cuartaFila">
                 <div>
-                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta">
+                    <div class="card selectable-card" data-selected="false" tabindex="0" id="tarjeta"
+                        onclick="toggleSelection(this, 'filaSeleccionMultiple')">
                         <div class="card-body">
                             <h5 class="card-title">Instalación en casa</h5>
-                            <p class="card-text">Contenido de la instalación en casa</p>
+                            <p class="card-text">Contenido</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4 text-black py-3" id="terceraFila">
+            <div class="col-sm-4 col-md-4 col-lg-4 text-black py-3" id="cuartaFila">
                 <div>
-                    <div class="card selectable-card" tabindex="0" data-selected="false" id="tarjeta">
+                    <div class="card selectable-card" tabindex="0" data-selected="false" id="tarjeta"
+                        onclick="toggleSelection(this, 'filaSeleccionMultiple')">
                         <div class="card-body">
                             <h5 class="card-title">Entrega a pie de calle</h5>
-                            <p class="card-text">Contenido de la entrega a pie de calle.</p>
+                            <p class="card-text">Contenido.</p>
                         </div>
                     </div>
                 </div>
@@ -448,6 +435,7 @@
         </div>
     </div>
     </div>
+    <script src="/js/main.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
