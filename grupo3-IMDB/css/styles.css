@@ -75,5 +75,8 @@ textarea:focus {
 }
 #listaErrores{
     border: red;
-
+    border: solid;
+    align-items: center;
+    display: flex;
+    width: 100%;
 }
