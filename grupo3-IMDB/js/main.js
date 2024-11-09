@@ -29,7 +29,7 @@ function validar() {
     }
 
     // Para "fecha"
-    const fecha = document.getElementById('fechaNacimiento');
+    const fecha = document.getElementById('fechanacimiento');
     if (fecha.value === "") {
         const listItem2 = document.getElementById('lifecha');
         listItem2.style.display = 'block';
@@ -134,6 +134,77 @@ function validar() {
     if (web.value === "") {
         const listItem14 = document.getElementById('liweb');
         listItem14.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const nombreVia = document.getElementById('nombreVia');
+    if (nombreVia.value === "") {
+        const listItem15 = document.getElementById('linombrevia');
+        listItem15.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const numeroDireccion = document.getElementById('numeroDireccion');
+    if (numeroDireccion.value === "") {
+        const listItem16 = document.getElementById('linumerodireccion');
+        listItem16.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const codigoPostal = document.getElementById('codigoPostal');
+    if (codigoPostal.value === "") {
+        const listItem17 = document.getElementById('licodigopostal');
+        listItem17.style.display = 'block';
+        hayErrores = true;
+    }
+    const nombreTitular = document.getElementById('nombreTitular');
+    if (nombreTitular.value === "") {
+        const listItem18 = document.getElementById('linombretitular');
+        listItem18.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const fechaCaducidad = document.getElementById('fechaCaducidad');
+    if (fechaCaducidad.value === "") {
+        const listItem19 = document.getElementById('lifechacaducidad');
+        listItem19.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const cvv = document.getElementById('cvv');
+    if (cvv.value === "") {
+        const listItem20 = document.getElementById('licvv');
+        listItem20.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const nombreBanco = document.getElementById('nombreBanco');
+    if (nombreBanco.value === "") {
+        const listItem21 = document.getElementById('linombrebanco');
+        listItem21.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const ibanRegex = /^[A-Z]{2}([A-Z0-9]{1,30})$/;
+    const numeroCuenta = document.getElementById('numeroCuenta');
+    if (ibanRegex.test(numeroCuenta.value)) {
+        const listItem22 = document.getElementById('linumerocuenta');
+        listItem22.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const swiftRegex = /^[A-Z]{6}[A-Z0-9]{1,3}$/;
+    const swift = document.getElementById('swift');
+    if (swiftRegex.test(swift.value)) {
+        const listItem23 = document.getElementById('liswift');
+        listItem23.style.display = 'block';
+        hayErrores = true;
+    }
+
+    const sucursal = document.getElementById('sucursal');
+    if (sucursal.value === "") {
+        const listItem24 = document.getElementById('lisucursal');
+        listItem24.style.display = 'block';
         hayErrores = true;
     }
 
