@@ -88,3 +88,12 @@ textarea:focus {
 #listaErrores h3{
     color:red;
 }
+
+#iconoErrores{
+    font-size: 1.5rem;
+    color: red;
+    background-color: transparent;
+    -webkit-text-stroke: 1px red;
+    -webkit-text-fill-color: transparent;
+    border-radius: 0;
+}
